@@ -1,0 +1,8 @@
+{
+  "python": "3.13.5",
+  "pytorch": "2.10.0+cpu",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "processor": "",
+  "torch_threads": 1,
+  "note": "Benchmarks were executed in a CPU-only environment. Dedicated Raspberry Pi/Jetson power telemetry was not available."
+}
