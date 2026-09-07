@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+
+# Generated model artifacts (reproducible from src/pipeline.py / src/export_onnx.py)
+models/*.pt
+models/*.pth
+models/*.onnx
