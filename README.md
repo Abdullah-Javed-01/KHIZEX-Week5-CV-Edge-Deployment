@@ -55,8 +55,8 @@ KHIZEX-Week5-CV-Edge-Deployment/
 │   ├── metrics_summary.csv
 │   ├── metrics_summary.json
 │   ├── runtime_info.json
-│   ├── accuracy_vs_latency.png
-│   └── accuracy_vs_size.png
+│   ├── accuracy_vs_latency.svg
+│   └── accuracy_vs_size.svg
 ├── src/
 │   ├── pipeline.py
 │   └── export_onnx.py
