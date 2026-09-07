@@ -1,0 +1,65 @@
+{
+  "seed": 42,
+  "dataset": "sklearn digits",
+  "test_samples": 450,
+  "pruned_accuracy_before_recovery": 0.9777777777777777,
+  "final_pruning_sparsity": 0.5,
+  "metrics": [
+    {
+      "variant": "Baseline FP32",
+      "accuracy": 0.9866666666666667,
+      "model_size_mb": 8.565773963928223,
+      "parameter_count": 2241546,
+      "median_latency_ms": 0.39053950000000004,
+      "p95_latency_ms": 0.5177961499999998,
+      "sparsity": 0.0,
+      "precision": "FP32",
+      "runtime": "PyTorch/TorchScript CPU",
+      "size_reduction_pct": 0.0,
+      "latency_change_pct": 0.0,
+      "accuracy_drop_pp": 0.0
+    },
+    {
+      "variant": "Pruned FP32",
+      "accuracy": 0.9822222222222222,
+      "model_size_mb": 8.566180229187012,
+      "parameter_count": 2241546,
+      "median_latency_ms": 0.3779625,
+      "p95_latency_ms": 0.51662835,
+      "sparsity": 0.5,
+      "precision": "FP32",
+      "runtime": "PyTorch/TorchScript CPU",
+      "size_reduction_pct": -0.004742890257203314,
+      "latency_change_pct": 3.2204168848477654,
+      "accuracy_drop_pp": 0.4444444444444473
+    },
+    {
+      "variant": "Quantized INT8",
+      "accuracy": 0.9866666666666667,
+      "model_size_mb": 2.16937255859375,
+      "parameter_count": 2241546,
+      "median_latency_ms": 0.1583405,
+      "p95_latency_ms": 0.24129554999999997,
+      "sparsity": 0.0,
+      "precision": "INT8 weights / dynamic activations",
+      "runtime": "PyTorch/TorchScript CPU",
+      "size_reduction_pct": 74.6739457785215,
+      "latency_change_pct": 59.455957720025765,
+      "accuracy_drop_pp": 0.0
+    },
+    {
+      "variant": "Pruned + Quantized INT8",
+      "accuracy": 0.9822222222222222,
+      "model_size_mb": 2.1699018478393555,
+      "parameter_count": 2241546,
+      "median_latency_ms": 0.155643,
+      "p95_latency_ms": 0.2337919999999999,
+      "sparsity": 0.5,
+      "precision": "INT8 weights / dynamic activations",
+      "runtime": "PyTorch/TorchScript CPU",
+      "size_reduction_pct": 74.66776666093288,
+      "latency_change_pct": 60.146668902889466,
+      "accuracy_drop_pp": 0.4444444444444473
+    }
+  ]
+}
